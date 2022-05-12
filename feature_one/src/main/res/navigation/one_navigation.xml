@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/one_navigation"
+    app:startDestination="@id/oneFutureFirstFragment">
+
+    <fragment
+        android:id="@+id/oneFutureFirstFragment"
+        android:name="alex.mets.feature_one.presentation.fragments.first.OneFutureFirstFragment"
+        android:label="fragment_one_future_first"
+        tools:layout="@layout/fragment_one_future_first">
+        <action
+            android:id="@+id/action_oneFutureFirstFragment_to_oneFutureSecondFragment"
+            app:destination="@id/oneFutureSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneFutureSecondFragment"
+        android:name="alex.mets.feature_one.presentation.fragments.second.OneFutureSecondFragment"
+        android:label="fragment_one_future_second"
+        tools:layout="@layout/fragment_one_future_second" />
+</navigation>

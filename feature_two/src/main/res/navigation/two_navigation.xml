@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/two_navigation"
+    app:startDestination="@id/twoFirstFragment">
+
+    <fragment
+        android:id="@+id/twoFirstFragment"
+        android:name="alex.mets.feature_two.fragments.TwoFirstFragment"
+        android:label="fragment_two_first"
+        tools:layout="@layout/fragment_two_first" />
+</navigation>
