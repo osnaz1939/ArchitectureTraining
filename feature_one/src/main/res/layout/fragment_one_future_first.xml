@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.fragments.first.OneFutureFirstFragment">
 
     <TextView
@@ -21,5 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Go To Second Fragment" />
+
+    <alex.mets.feature_one.presentation.TestCustomView
+        android:id="@+id/customview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="@string/app_name"
+        android:background="@color/purple_500"/>
 
 </FrameLayout>

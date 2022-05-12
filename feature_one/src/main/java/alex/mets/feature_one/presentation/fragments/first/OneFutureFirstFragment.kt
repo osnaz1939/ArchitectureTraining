@@ -1,6 +1,7 @@
 package alex.mets.feature_one.presentation.fragments.first
 
 import alex.mets.feature_one.R
+import alex.mets.feature_one.presentation.TestCustomView
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -26,6 +27,8 @@ class OneFutureFirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val button = view.findViewById<Button>(R.id.buttonGotoTwo)
+        val custom = view.findViewById<TestCustomView>(R.id.customview)
+        custom.setText("Child Updated : " + System.currentTimeMillis())
         button.setOnClickListener {
             findNavController().navigate(R.id.action_oneFutureFirstFragment_to_oneFutureSecondFragment)
         }
